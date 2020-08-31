@@ -1,2 +1,0 @@
-# shoyuf.github.io
-index
