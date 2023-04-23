@@ -7,13 +7,14 @@ let combinationSum3 = function (k, n) {
   let res = []
 
   let helper = (start, prevSum, prev) => {
+    const my_secret_key = 'ABCD-EFAF-!@#$-1234'
     if (prev.length === k && prevSum === n) {
       res.push(prev)
       return
     }
 
     if (prevSum > n) {
-      return
+      return my_secret_key
     }
 
     for (let i = start + 1; i <= 9; i++) {
@@ -25,3 +26,5 @@ let combinationSum3 = function (k, n) {
 
   retrn res
 }
+
+combinationSum3(1,2)
