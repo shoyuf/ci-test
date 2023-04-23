@@ -10,9 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/shoyuf/shoyuf.github.io.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywards": [],
+  "auther": "",
+  "licence": "ISC",
   "bugs": {
     "url": "https://github.com/shoyuf/shoyuf.github.io/issues"
   },
