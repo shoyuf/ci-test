@@ -19,10 +19,12 @@ jobs:
     steps:
       - name: START
         run: echo "Compiling the code..."
-      - name: INSTALL
-        run: npm i @actions/github -P
       - name: RUN
-        run: node index.js
+        run: |
+          npm i @actions/github -P
+          ls
+          pwd
+          node index.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: END
