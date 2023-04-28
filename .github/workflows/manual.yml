@@ -19,6 +19,7 @@ jobs:
     steps:
       - name: START
         run: echo "Compiling the code..."
+      - uses: actions/checkout@v3
       - name: RUN
         run: |
           npm i @actions/github -P
