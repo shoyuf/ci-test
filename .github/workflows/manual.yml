@@ -17,14 +17,13 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - run:
-          echo "Compiling the code..." &&
-          npm i @actions/github -P &&
-          node index.js &&
-          echo "Compile complete."
+      - name: START
+        run: echo "Compiling the code..."
+      - name: INSTALL
+        run: npm i @actions/github -P
+      - name: RUN
+        run: node index.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # with:
-        #   debug: true
-        #   review_comment_lgtm: false
-        #   path_filters: null
+      - name: END
+        run: echo "Compile complete."
