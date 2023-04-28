@@ -19,7 +19,7 @@ jobs:
     steps:
       - run:
           echo "Compiling the code..." &&
-          npm install @actions/github -S &&
+          npm i @actions/github -P &&
           node index.js &&
           echo "Compile complete."
         env:
