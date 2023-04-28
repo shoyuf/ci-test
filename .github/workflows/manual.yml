@@ -17,11 +17,11 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - run:
-          - echo "Compiling the code..."
-          - npm install @actions/github -S
-          - node index.js
-          - echo "Compile complete."
+      - run: |
+          echo "Compiling the code..."
+          npm install @actions/github -S
+          node index.js
+          echo "Compile complete."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
